@@ -8,7 +8,7 @@ Installation:
 1. Install python3
 2. Download the script and requirement file
 3. run 'pip install -r requirement.txt'. (open command prompt and run this)
-4. test it by running 'python3 cowin-beep.py --pincode 583227 --age 45'. if you hear beep sound then script is working . if you don't hear the sound  mail to sandeepyelburgi@gmail.com. stop the script by running 
+4. test it by running 'python3 cowin-beep.py --pincode 583227 --age 45'. if you hear beep sound then script is working . if you don't hear the sound  mail to sandeepyelburgi@gmail.com. stop the script by doing ctrl-c
 
 
 Run:
