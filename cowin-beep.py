@@ -26,7 +26,7 @@ if __name__ == '__main__':
 
     print("Running the vaccine script for the pincode {} age {} date {}".format(pin_code, min_age_limit, date))
     while True:
-        time.sleep(15)
+        time.sleep(5)
         try:
             available_centers = cowin.get_availability_by_pincode(pin_code, date, min_age_limit)
             centers = available_centers['centers']
