@@ -5,7 +5,7 @@ import datetime
 import time
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='cowin args')
+    parser = argparse.ArgumentParser(description='cowin')
     parser.add_argument('-p', '--pincode', type=str, help="pincode of the area")
     parser.add_argument('-a', '--age', type=int, help="age")
     args = parser.parse_args()
