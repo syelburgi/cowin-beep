@@ -32,7 +32,7 @@ if __name__ == '__main__':
         try:
             available_centers = cowin.get_availability_by_pincode(pin_code, date, min_age_limit)
             centers = available_centers['centers']
-            i = 0
+            i = 1
             for center in centers:
                 sessions = center['sessions']
                 for session in sessions:
