@@ -14,9 +14,11 @@ Installation:
 Run:
 
 python3 cowin-beep.py --pincode <your pincode> (by default it is run against 18 age). if you want to specific age group then run
+
 python3 cowin-beep.py --pincode <your pincode> --age 45
  
 if you are looking for specific vaccine like covaxin/covishield then it can be run like below
 
 python3 cowin-beep.py --pincode <your pincode> --age 45 --vaccine covaxin 
+
 python3 cowin-beep.py --pincode <your pincode> --age 45 --vaccine covishield
