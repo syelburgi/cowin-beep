@@ -19,6 +19,10 @@ python3 cowin-beep.py --pincode 583227 --age 45
  
 if you are looking for specific vaccine like covaxin/covishield then it can be run like below
 
-python3 cowin-beep.py --pincode 583227 --age 45 --vaccine covaxin 
+python3 cowin-beep.py --pincode 583227 --vaccine covaxin 
 
-python3 cowin-beep.py --pincode 583227 --age 45 --vaccine covishield
+python3 cowin-beep.py --pincode 583227 --vaccine covishield
+
+combination of all three
+python3 cowin-beep.py --pincode 583227 --age 18 --vaccine covishield
+
