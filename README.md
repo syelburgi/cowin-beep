@@ -24,5 +24,6 @@ python3 cowin-beep.py --pincode 583227 --vaccine covaxin
 python3 cowin-beep.py --pincode 583227 --vaccine covishield
 
 combination of all three
+
 python3 cowin-beep.py --pincode 583227 --age 18 --vaccine covishield
 
