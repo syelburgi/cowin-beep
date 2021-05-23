@@ -20,7 +20,11 @@ if __name__ == '__main__':
     timeout = 60
     if args.timeout:
         timeout = args.timeout
-
+    
+    dose = 1
+    if args.dose:
+        dose = args.dose
+    
     pin_code = args.pincode
     date = datetime.datetime.today().strftime('%d-%m-%Y')
     min_age_limit = 18
@@ -31,7 +35,7 @@ if __name__ == '__main__':
 
     cowin = CoWinAPI()
 
-    print("Running the vaccine script for the pincode {} age {} date {}".format(pin_code, min_age_limit, date))
+    print("Running the vaccine script for the pincode {} age {} date {} dose {}".format(pin_code, min_age_limit, date, dose))
     while True:
         time.sleep(timeout)
         try:
@@ -42,12 +46,10 @@ if __name__ == '__main__':
                 sessions = center['sessions']
                 for session in sessions:
                     if (args.vaccine is None or args.vaccine.lower() == session['vaccine'].lower()) and \
-                            ((args.dose is None and session['available_capacity'] != 0) \
-                             or (args.dose == 1 and session['available_capacity_dose1'] != 0) or
-                            (args.dose == 2 and session['available_capacity_dose2'] != 0)):
+                        ((dose == 1 and session['available_capacity_dose1'] != 0) or (dose == 2 and session['available_capacity_dose2'] != 0)):
                       
-                        print("{}.Slots available for the pincode {} age {} date {} vaccine {}".format(i, pin_code, min_age_limit, session['date'],
-                            session['vaccine'].lower()))
+                        print("{}.Available for the pincode {} age {} date {} vaccine {} dose {}".format(i, pin_code, min_age_limit, session['date'],
+                            session['vaccine'].lower(), dose))
                         i += 1
                         winsound.Beep(frequency, duration)
         except Exception:

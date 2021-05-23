@@ -23,11 +23,11 @@ python3 cowin-beep.py --pincode 583227 --vaccine covaxin
 
 python3 cowin-beep.py --pincode 583227 --vaccine covishield
 
-if you are looking for dose 1 or dose 2 then it can be run like below (Default - both the doses)
+if you are looking for dose 1 or dose 2 then it can be run like below (Default - Dose 1)
 
-python3 cowin-beep.py --pincode 583227 --dose 1
+python3 cowin-beep.py --pincode 583227 --dose 2
 
 combination of above
 
-python3 cowin-beep.py --pincode 583227 --age 18 --vaccine covishield --dose 1
+python3 cowin-beep.py --pincode 583227 --age 18 --vaccine covishield --dose 2
 
